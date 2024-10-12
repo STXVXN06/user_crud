@@ -17,7 +17,8 @@ class UserService:
     """Service layer for User operations."""
 
     @staticmethod
-    def create_user(name: str = None, email: str = None, password: str = None, account_type: str = None, role: str = None) -> User:
+    def create_user(name: str = None, email: str = None, password: str = None,
+                    account_type: str = None, role: str = None) -> User:
         """
         Create a new user.
 
@@ -36,7 +37,7 @@ class UserService:
         )
         return User(
             id=user_instance.id,
-            name=user_instance.name,
+            usarname=user_instance.username,
             email=user_instance.email,
             password=user_instance.password,
             account_type=user_instance.account_type,

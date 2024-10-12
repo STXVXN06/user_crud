@@ -64,7 +64,8 @@ def get_user(user_id: int) -> User:
 
 @user_router.put("/users/{user_id}", response_model=User)
 def update_user(
-    user_id: int, name: str = None, email: str = None, password: str = None, account_type: str = None, role: str = None
+    user_id: int, name: str = None, email: str = None, password: str = None,
+      account_type: str = None, role: str = None
 ) -> User:
     """
     Update user information.

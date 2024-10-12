@@ -9,7 +9,7 @@ print(DATABASE)
 database = MySQLDatabase(
     DATABASE["name"],
     user=DATABASE["user"],
-    passwd=DATABASE["password"],
+    passwd=DATABASE["passwd"],
     host=DATABASE["host"],
     port=DATABASE["port"],
 )

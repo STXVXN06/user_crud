@@ -13,7 +13,7 @@ if ENV == "production":
         "name": os.getenv("MYSQL_DATABASE"),
         "engine": "peewee.MySQLDatabase",  # MySQL como motor de base de datos
         "user": os.getenv("MYSQL_USER"),
-        "password": os.getenv("MYSQL_PASSWORD"),
+        "passwd": os.getenv("MYSQL_PASSWORD"),
         "host": os.getenv("MYSQL_HOST"),
         "port": int(os.getenv("MYSQL_PORT")),
     }
@@ -22,7 +22,7 @@ else:
         "name": os.getenv("MYSQL_DATABASE"),
         "engine": "peewee.MySQLDatabase",  # MySQL como motor de base de datos
         "user": os.getenv("MYSQL_USER"),
-        "password": os.getenv("MYSQL_PASSWORD"),
+        "passwd": os.getenv("MYSQL_PASSWORD"),
         "host": os.getenv("MYSQL_HOST"),
         "port": int(os.getenv("MYSQL_PORT")),
     }
